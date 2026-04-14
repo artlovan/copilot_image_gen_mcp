@@ -1,0 +1,19 @@
+{
+  "name": "copilot-image-gen",
+  "description": "Generate and refine images from text prompts via Microsoft Copilot's DALL-E backend, directly from the terminal.",
+  "version": "0.1.0",
+  "keywords": [
+    "mcp",
+    "image-generation",
+    "dall-e",
+    "copilot",
+    "ai",
+    "text-to-image"
+  ],
+  "author": {
+    "name": "msartem"
+  },
+  "homepage": "https://github.com/msartem/copilot_image_gen_mcp",
+  "repository": "https://github.com/msartem/copilot_image_gen_mcp",
+  "license": "MIT"
+}
