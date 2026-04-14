@@ -13,34 +13,14 @@ Generate images from text prompts and iteratively refine them — all from the t
 
 ## Quick Start
 
-1. **Install**
+1. **Install and register**
 
    ```bash
-   pip install git+https://github.com/msartem/copilot_image_gen_mcp.git
+   pip install copilot-image-gen-mcp
+   copilot plugin install msartem/copilot_image_gen_mcp
    ```
 
-   Or install from source:
-
-   ```bash
-   git clone https://github.com/msartem/copilot_image_gen_mcp.git
-   cd copilot_image_gen_mcp
-   pip install .
-   ```
-
-2. **Add to your MCP config** (`~/.copilot/mcp-config.json`)
-
-   ```json
-   {
-     "mcpServers": {
-       "copilot-image-gen": {
-         "type": "stdio",
-         "command": "copilot-image-gen"
-       }
-     }
-   }
-   ```
-
-3. **Launch Copilot CLI**
+2. **Launch Copilot CLI**
 
    ```bash
    copilot
