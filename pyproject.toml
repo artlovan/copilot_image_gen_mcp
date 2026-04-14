@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copilot-image-gen-mcp"
+version = "0.1.0"
+description = "MCP server for AI image generation via Microsoft Copilot"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "msartem" },
+]
+keywords = ["mcp", "copilot", "image-generation", "dall-e", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "requests>=2.28",
+    "websocket-client>=1.6",
+    "fastmcp>=3.0",
+    "playwright>=1.40",
+]
+
+[project.urls]
+Homepage = "https://github.com/msartem/copilot_image_gen_mcp"
+Repository = "https://github.com/msartem/copilot_image_gen_mcp"
+Issues = "https://github.com/msartem/copilot_image_gen_mcp/issues"
+Documentation = "https://github.com/msartem/copilot_image_gen_mcp/blob/main/TECHNICAL.md"
+
+[project.scripts]
+copilot-image-gen = "copilot_image_gen.server:main"
+
+[tool.setuptools.packages.find]
+include = ["copilot_image_gen*"]

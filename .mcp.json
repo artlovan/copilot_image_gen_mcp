@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "copilot-image-gen": {
+      "type": "stdio",
+      "command": "copilot-image-gen"
+    }
+  }
+}
