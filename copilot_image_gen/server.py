@@ -32,6 +32,8 @@ _session = ImageGenSession()
 
 
 def _log(msg: str):
+    if sys.stderr is None:
+        return
     try:
         print(msg, file=sys.stderr, flush=True)
     except (OSError, UnicodeError, ValueError):
