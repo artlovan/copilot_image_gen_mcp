@@ -32,7 +32,11 @@ _session = ImageGenSession()
 
 
 def _log(msg: str):
-    print(msg, file=sys.stderr, flush=True)
+    try:
+        print(msg, file=sys.stderr, flush=True)
+    except (OSError, UnicodeError, ValueError):
+        # Runtime diagnostics must never fail an MCP tool invocation.
+        pass
 
 
 # ── MCP Tools ───────────────────────────────────────────────────────────────

@@ -38,7 +38,11 @@ from .transport.signalr_ws import SignalRTransport
 
 
 def _log(msg: str):
-    print(msg, file=sys.stderr, flush=True)
+    try:
+        print(msg, file=sys.stderr, flush=True)
+    except (OSError, UnicodeError, ValueError):
+        # Runtime diagnostics must never fail image generation.
+        pass
 
 
 class ImageGenSession:
