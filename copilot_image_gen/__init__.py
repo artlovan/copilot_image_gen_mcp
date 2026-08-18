@@ -1,3 +1,8 @@
 """Copilot Image Generation MCP Server."""
 
-__version__ = "0.1.1"
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version("copilot-image-gen-mcp")
+except PackageNotFoundError:
+    __version__ = "dev"
