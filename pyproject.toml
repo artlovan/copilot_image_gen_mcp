@@ -32,10 +32,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/msartem/copilot_image_gen_mcp"
-Repository = "https://github.com/msartem/copilot_image_gen_mcp"
-Issues = "https://github.com/msartem/copilot_image_gen_mcp/issues"
-Documentation = "https://github.com/msartem/copilot_image_gen_mcp/blob/main/TECHNICAL.md"
+Homepage = "https://github.com/artlovan/copilot_image_gen_mcp"
+Repository = "https://github.com/artlovan/copilot_image_gen_mcp"
+Issues = "https://github.com/artlovan/copilot_image_gen_mcp/issues"
+Documentation = "https://github.com/artlovan/copilot_image_gen_mcp/blob/main/TECHNICAL.md"
 
 [project.scripts]
 copilot-image-gen = "copilot_image_gen.server:main"
