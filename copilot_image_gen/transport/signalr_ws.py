@@ -32,7 +32,13 @@ RECORD_SEPARATOR = "\x1e"
 
 
 def _log(msg: str):
-    print(msg, file=sys.stderr, flush=True)
+    if sys.stderr is None:
+        return
+    try:
+        print(msg, file=sys.stderr, flush=True)
+    except (OSError, UnicodeError, ValueError):
+        # Runtime diagnostics must never fail the WebSocket transport.
+        pass
 
 
 class SignalRTransport(TransportBase):
