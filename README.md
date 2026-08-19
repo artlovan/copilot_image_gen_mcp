@@ -20,6 +20,12 @@ Generate images from text prompts and iteratively refine them — all from the t
    copilot plugin install msartem/copilot_image_gen_mcp
    ```
 
+   **Updating to latest version:**
+
+   ```bash
+   pip install --upgrade copilot-image-gen-mcp
+   ```
+
 2. **Launch Copilot CLI**
 
    ```bash
